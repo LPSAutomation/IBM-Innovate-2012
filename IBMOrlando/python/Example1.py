@@ -4,18 +4,7 @@ Created on Dec 19, 2011
 @author: smcadams
 '''
 
-from jarray import array
-from com.rational.test.ft.script import Property, RationalTestScript
-from com.rational.test.ft.value import RegularExpression
-from java.lang import String
-
-arr = array([".class", "Html.INPUT.text", ".id", "lst-ib", ".name", "q"], String)
-
-inputRegex = RegularExpression("(^Html\\.INPUT\\.text|^Html\\.INPUT\\.textarea)", True)
-arr2 = array([Property(".class", inputRegex), Property(".name", "q")], Property)
-
-
-
+from com.rational.test.ft.script import RationalTestScript
 from python.screens.GoogleSearch import GoogleSearch
 
 if __name__ == '__main__':
@@ -25,6 +14,8 @@ if __name__ == '__main__':
     #Type Into the Search Box
     search.type("Google Search Box", "Java Testing", True)
     
+    RationalTestScript.sleep(3) #For Demo purposes
+    
     #Click the Images link on the left hand side
     search.click("Images")
     
@@ -33,6 +24,8 @@ if __name__ == '__main__':
     
     #Using Jython click evertyhing link on left hand side
     search.py_click("Everything")
+    
+    RationalTestScript.sleep(3) #For Demo purposes
     
     #waid for browser to finish loading
     search.browser.sync(20, 1)
