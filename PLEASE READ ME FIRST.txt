@@ -25,6 +25,8 @@ Projects are currently set up for RFT version 8.2.1.1 on a 32 bit machine.
 
 If you are using a newer or older version of RFT or a 64 bit system you will get PYTHONPATH errors
 
-To fix these errors follow the slides for configuring the PYTHONPATH that is included in the Powerpoint folder for Innovate 2012.
+Also if your Jython interpreter is not setup PyDev will say that it cannot find the Interpreter.
+
+To fix these errors follow the slides for configuring PyDev that is included in the Powerpoint folder for Innovate 2012.
 
 
