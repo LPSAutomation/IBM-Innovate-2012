@@ -1,0 +1,181 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="charset" CONTENT="utf-8">
+<TITLE>Playback Log for demoScripts.innovate2012.JythonLauncher</TITLE>
+<STYLE TYPE="text/css">
+<!--
+  table caption {color: darkblue; font-size: x-large; font-weight: bold}
+  td {align: left; font-weight: bold}
+  td.fail {color: darkred; width: 10% }
+  td.warn {color: darkgoldenrod; width: 10% }
+  td.pass {color: darkgreen; width: 10% }
+  td.unkn {color: darkcyan; width: 10% }
+  td.info {width: 10% }
+  td.time {width: 30%; font-weight: normal}
+  td.note {align: left; font-weight: bold}
+  li {font-weight: normal}
+-->
+</STYLE>
+<SCRIPT>
+<!--
+function comparator(logDir,base,exp,act)
+{
+	try{
+		document.ComparatorApplet.startComparatorEx(base,exp,act,logDir);
+	}
+	catch(e){
+		alert("CRFCN0309E: Error creating verification point display:\nCRFCN0310E: An enabled JRE (1.3.1_02 or better) must be associated with the browser to view VP results");
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE WIDTH="100%" border="1" rules="rows" summary="Log Events">
+<SCRIPT>
+<!--
+if (self == top)
+	document.write('<CAPTION>Log: demoScripts.innovate2012.JythonLauncher</CAPTION>')
+//-->
+</SCRIPT>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">30-May-2012 09:06:23.961 PM</TD>
+<TD CLASS="note">Script start [demoScripts.innovate2012.JythonLauncher]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>line_number = </I>1</LI>
+<LI><I>script_iter_count = </I>0</LI>
+<LI><I>script_name = </I>demoScripts.innovate2012.JythonLauncher</LI>
+<LI><I>script_id = </I>demoScripts.innovate2012.JythonLauncher.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">30-May-2012 09:06:53.729 PM</TD>
+<TD CLASS="note">Script start [GoogleFinanceDemo.py]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>line_number = </I>1</LI>
+<LI><I>script_iter_count = </I>0</LI>
+<LI><I>script_name = </I>demoScripts.innovate2012.JythonLauncher</LI>
+<LI><I>script_id = </I>demoScripts.innovate2012.JythonLauncher.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="fail0" CLASS="fail">FAIL</TD>
+<TD CLASS="time">30-May-2012 09:38:04.155 PM</TD>
+<TD CLASS="note">org.python.core.PyException - org.python.core.PyException.&lt;init&gt;(PyException.java:43)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>demoScripts.innovate2012.JythonLauncher</LI>
+<LI><I>Stack_0 = </I>demoScripts.innovate2012.JythonLauncher.testMain(JythonLauncher.java:265)</LI>
+<LI><I>exception_name = </I>org.python.core.PyException</LI>
+<LI><I>exception_message = </I>null</LI>
+<LI><I>exception_stack = </I>Traceback (most recent call last):
+<BR>  File "C:\SVN\IBMInnovate\trunk\IBMOrlando\python\GoogleFinanceDemo.py", line 17, in <module>
+<BR>    inputRegex = RegularExpression("(^Html\\.INPUT\\.text|^Html\\.INPUT\\.textarea)", True)
+<BR>TypeError: can't convert ['.class', RegularExpression((^Html\.INPUT\.text|^Html\.INPUT\.textarea))] to com.rational.test.ft.script.Property
+<BR>
+<BR>	at org.python.core.PyException.<init>(PyException.java:43)
+<BR>	at org.python.core.PyException.<init>(PyException.java:61)
+<BR>	at org.python.core.Py.TypeError(Py.java:221)
+<BR>	at org.python.core.Py.tojava(Py.java:501)
+<BR>	at org.python.core.PyArray.pyset(PyArray.java:1472)
+<BR>	at org.python.core.PyArray.set(PyArray.java:1406)
+<BR>	at org.python.core.PyArray.extendInternalIter(PyArray.java:759)
+<BR>	at org.python.core.PyArray.extendInternal(PyArray.java:737)
+<BR>	at org.python.core.PyArray.array(PyArray.java:167)
+<BR>	at org.python.modules.jarray.array(jarray.java:12)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:48)
+<BR>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<BR>	at java.lang.reflect.Method.invoke(Method.java:600)
+<BR>	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:186)
+<BR>	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:204)
+<BR>	at org.python.core.PyObject.__call__(PyObject.java:404)
+<BR>	at org.python.core.PyObject.__call__(PyObject.java:408)
+<BR>	at org.python.pycode._pyx21.f$0(C:\SVN\IBMInnovate\trunk\IBMOrlando\python\GoogleFinanceDemo.py:55)
+<BR>	at org.python.pycode._pyx21.call_function(C:\SVN\IBMInnovate\trunk\IBMOrlando\python\GoogleFinanceDemo.py)
+<BR>	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+<BR>	at org.python.core.PyCode.call(PyCode.java:18)
+<BR>	at org.python.core.Py.runCode(Py.java:1261)
+<BR>	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+<BR>	at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:225)
+<BR>	at demoScripts.innovate2012.JythonLauncher.testMain(JythonLauncher.java:257)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:48)
+<BR>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<BR>	at java.lang.reflect.Method.invoke(Method.java:600)
+<BR>	at com.rational.test.ft.sys.FtReflection.invokeMethod2Ext(FtReflection.java:1253)
+<BR>	at com.rational.test.ft.sys.FtReflection.invokeMethodExt(FtReflection.java:1453)
+<BR>	at com.rational.test.ft.sys.FtReflection.invokeMethodExt(FtReflection.java:1806)
+<BR>	at com.rational.test.ft.script.RationalTestScript.runMainInner(RationalTestScript.java:999)
+<BR>	at com.rational.test.ft.script.RationalTestScript.runMain(RationalTestScript.java:924)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:48)
+<BR>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<BR>	at java.lang.reflect.Method.invoke(Method.java:600)
+<BR>	at com.rational.test.ft.sys.FtReflection.invokeMethod2Ext(FtReflection.java:1253)
+<BR>	at com.rational.test.ft.sys.FtReflection.invokeMethodExt(FtReflection.java:1453)
+<BR>	at com.rational.test.ft.sys.FtReflection.invokeMethodExt(FtReflection.java:1806)
+<BR>	at com.rational.test.ft.application.ScriptPlayback.runScript(ScriptPlayback.java:734)
+<BR>	at com.rational.test.ft.application.ScriptPlayback.run(ScriptPlayback.java:671)
+<BR>	at com.rational.test.ft.application.RationalFtMain.run(RationalFtMain.java:2356)
+<BR>	at com.rational.test.ft.application.RationalFtMain.main(RationalFtMain.java:344)
+<BR>	at com.rational.test.ft.application.CommandLineApplication.run(CommandLineApplication.java:40)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:48)
+<BR>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<BR>	at java.lang.reflect.Method.invoke(Method.java:600)
+<BR>	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)
+<BR>	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)
+<BR>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+<BR>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+<BR>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+<BR>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:48)
+<BR>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<BR>	at java.lang.reflect.Method.invoke(Method.java:600)
+<BR>	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+<BR>	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+<BR>	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+<BR>	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+<BR>	at org.eclipse.core.launcher.Main.main(Main.java:34)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<BR>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:48)
+<BR>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<BR>	at java.lang.reflect.Method.invoke(Method.java:600)
+<BR>	at com.rational.test.ft.rational_ft.startFT(rational_ft.java:316)
+<BR>	at com.rational.test.ft.rational_ft.main(rational_ft.java:187)
+<BR></LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="fail1" CLASS="fail">FAIL</TD>
+<TD CLASS="time">30-May-2012 09:38:04.199 PM</TD>
+<TD CLASS="note">demoScripts.innovate2012.JythonLauncher.testMain had an unhandled exception.</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>exception_name = </I>java.lang.NullPointerException</LI>
+<LI><I>exception_message = </I>null</LI>
+<LI><I>script_name = </I>demoScripts.innovate2012.JythonLauncher</LI>
+<LI><I>script_id = </I>demoScripts.innovate2012.JythonLauncher.java</LI>
+<LI><I>line_number = </I>266</LI>
+<LI><I>exception_stack = </I>	at com.advancedrft.common.automation.rft.Log.logException(Log.java:327)<BR>	at demoScripts.innovate2012.JythonLauncher.testMain(JythonLauncher.java:266)<BR>	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)<BR>	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)<BR>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)<BR>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)<BR>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)<BR>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)<BR>	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)<BR>	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)<BR>	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)<BR>	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)<BR>	at org.eclipse.core.launcher.Main.main(Main.java:34)<BR></LI>
+</UL>
+</TD></TR>
+<TR>
+<TD CLASS="fail">FAIL</TD>
+<TD CLASS="time">30-May-2012 09:38:04.200 PM</TD>
+<TD CLASS="note">Script end [demoScripts.innovate2012.JythonLauncher]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>demoScripts.innovate2012.JythonLauncher</LI>
+<LI><I>script_id = </I>demoScripts.innovate2012.JythonLauncher.java</LI>
+</UL>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>
