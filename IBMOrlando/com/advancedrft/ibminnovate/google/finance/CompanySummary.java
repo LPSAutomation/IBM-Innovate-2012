@@ -194,9 +194,9 @@ public class CompanySummary extends Finance
      */
     public void validateNewsLinks()
     {
-    	List<Browser> before = Browser.findBrowsers(5, 1, false, false);
         for (String title : getNewsLinkTitles())
         {
+        	List<Browser> before = Browser.findBrowsers(5, 1, false, false);
             TestObject link = null;
             try
             {
@@ -221,7 +221,11 @@ public class CompanySummary extends Finance
                 {
                 	Browser.syncAllBrowsers();
                     RationalTestScript.sleep(3);
-                    List<Browser> after = Browser.findBrowsers(5, 1, false, false);
+                    List<Browser> after = Browser.findBrowsers(1, 1, false, false);
+                    for(int i = 0; i < 15 && !(before.size() < after.size()); i++)
+                    {
+                    	after = Browser.findBrowsers(1, 1, false, false);
+                    }
                     //if a new window is open then the news article opened in another window, otherwise it opened in the current window
                     if(before.size() < after.size())
                     {
