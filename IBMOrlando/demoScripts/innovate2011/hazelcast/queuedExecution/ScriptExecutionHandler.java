@@ -19,12 +19,10 @@ import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.MessageListener;
 import com.ibm.rational.test.ft.sdk.RFTCore;
 import com.rational.test.ft.UserStoppedScriptError;
-import com.rational.test.ft.application.ScriptPlayback;
 import com.rational.test.ft.script.IScriptDefinition;
 import com.rational.test.ft.script.RationalTestScript;
 import com.rational.test.ft.script.impl.DatastoreDefinition;
 import com.rational.test.ft.services.ILog;
-import com.rational.test.ft.services.LogExtensionAdapter;
 import com.rational.test.ft.sys.TestContext;
 import com.rational.test.ft.util.OptionManager;
 

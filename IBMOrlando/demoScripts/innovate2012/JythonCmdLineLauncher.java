@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.python.core.PyException;
-import org.python.core.PyFile;
 import org.python.core.PyString;
 import org.python.util.PythonInterpreter;
 
@@ -94,7 +93,7 @@ public class JythonCmdLineLauncher extends JythonCmdLineLauncherHelper
             }
         }
         
-        IPlaybackMonitor ipbm = (IPlaybackMonitor) ServiceBroker.getServiceBroker().findService(IPlaybackMonitor.class.getName());
+        IPlaybackMonitor ipbm = (IPlaybackMonitor) ServiceBroker.getServiceBroker().findService(IPlaybackMonitor.class.getCanonicalName());
         try
         {
             unregisterAll();

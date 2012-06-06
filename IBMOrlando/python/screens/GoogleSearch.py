@@ -27,7 +27,7 @@ class GoogleSearch(JythonWebObjectManager):
     
     def add_items(self):
         self.addObjectDefinition("Google Search Box", [".class", "regex=(^Html\\.INPUT\\.text|^Html\\.INPUT\\.textarea)", ".name", "q"])
-        self.addObjectDefinition("Everything", [".class", "Html.TextNode", ".text", "regex=.*Everything.*"])
+        self.addObjectDefinition("Everything", [".class", "Html.A", ".text", "regex=.*(Everything|Web).*", ".className", "kl"])
         self.addObjectDefinition("Images", [".class", "Html.TextNode", ".text", "regex=.*Images.*"])
         self.addObjectDefinition("Google Home", [".class", "Html.A", ".id", "logo", ".title", "Go to Google Home"])
         
